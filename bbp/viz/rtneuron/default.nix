@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 				  equalizer pythonEnv-rtneuron qt ]  ;
 
   src = fetchgitPrivate {
-    url = "ssh://bbpcode.epfl.ch/viz/RTNeuron";
+    url = config.bbp_git_ssh + "/viz/RTNeuron";
     rev = "eb11426548ff3a423c15309c948e76053d8908b4";
     sha256 = "0aa5iqhpihq4xmnj1bc4n9q87v792s29gy1vmd04qna2nz0b07fj";
   };

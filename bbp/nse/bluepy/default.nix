@@ -8,7 +8,7 @@
 let 
 
     bluepy_sources = fetchgitPrivate {
-        url = "ssh://bbpcode.epfl.ch/analysis/BluePy";
+        url = config.bbp_git_ssh + "/analysis/BluePy";
         rev = "c825534e9cc59e7016ad6edeb16f657403da5c32";
         sha256 = "1kcy8cjzj64d7zvr79mvqnj4ykhbia0zg640vpvzjrgsjjf3zd61";
     };

@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ stdenv pkgconfig boost cmake openscenegraph ];
 
   src = fetchgitPrivate {
-    url = "ssh://bbpcode.epfl.ch/viz/osgTransparency";
+    url = config.bbp_git_ssh + "/viz/osgTransparency";
     rev = "e776367";
     sha256 = "0iiyasg1c4lgwkmyrpbsgdhj9dhm3grv6fac8vwf1gvdmdq1f5na";
   };

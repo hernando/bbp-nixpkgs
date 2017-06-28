@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ stdenv pkgconfig boost hpctools hdf5 zlib cmake mpiRuntime libxml2];
 
   src = fetchgitExternal {
-    url = "ssh://bbpcode.epfl.ch/building/BlueBuilder";
+    url = config.bbp_git_ssh + "/building/BlueBuilder";
     rev = "e304808bd291803a8eab57b61a8cb72d85374006";
     sha256 = "1c8k0s2g0p4b7myh56rq9j8bg1fjjgsdhszbfnsdfcx4nkm9fxkn";
   };

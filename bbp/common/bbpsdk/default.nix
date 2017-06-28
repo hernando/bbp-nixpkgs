@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ stdenv pkgconfig boost brion vmmlib servus mvdtool cmake lunchbox python hdf5 doxygen];
 
   src = fetchgitPrivate {
-    url = "ssh://bbpcode.epfl.ch/common/BBPSDK";
+    url = config.bbp_git_ssh + "/common/BBPSDK";
     rev= "f78b366";
     sha256 = "0lx5xgv0q18ib0zj84px0cfs582b0wivai69rdpww53krvbhmicb";
   };

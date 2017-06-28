@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ stdenv pkgconfig boost cmake mpiRuntime libxml2 hdf5 cnk-spi ];
 
   src = fetchgitPrivate {
-    url = "ssh://bbpcode.epfl.ch/hpc/HPCTools";
+    url = config.bbp_git_ssh + "/hpc/HPCTools";
     rev = "bd1ac24b2761e51f22f72359029dbda4b15a1d26";
     sha256 = "1liik1pfab6jyx608zgi1gw8mrkq3l7f7n4521m1im3356xy26hc";    
   };
